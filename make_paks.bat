@@ -28,20 +28,16 @@ if exist %arc_name%.zip (
 )
 
 for /d %%i in (
-  *clr*png*
-  *bw*png*
-  *clr*jpg*
-  *bw*jpg*
-  *md2*
+  pak99_32bit_textures
 ) do (
   pushd %%i
   %pak% * -g quake2 -o ..\..\%%i.pak
   popd
 )
 
-popd 
+popd
 
-rd /s /q %arc_name% 
+rd /s /q %arc_name%
 del /q qpakman.exe
 del /q qpakman.txt
 del /q qpakman-linux
