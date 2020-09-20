@@ -10,5 +10,3 @@ rather than by filename extension. Therefore, if you wish to override MD2 model 
 simply rename the MD3 model to ‘tris.md2’ and place it in appropriate packfile to make sure it gets loaded first.
 
 ALL files are md3, but renamed to md2!!!
-
-TODO: convert skins to PNG
