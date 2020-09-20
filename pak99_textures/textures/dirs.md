@@ -1,0 +1,29 @@
+### q2next1
+* 1und
+* dkte3
+* dod
+* flamel
+* maggot1-2
+* q1-tex
+* qwal
+* rune
+* unf
+* unfrune
+
+### q2rdm2
+* arco
+* base_wall
+* castlebrick
+* clock
+* especiales
+* evil
+* floor
+* gothic_light
+* lava
+* metal
+* trim
+* woods
+
+### q2rdm11
+* bldstorm
+* ogro

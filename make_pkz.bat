@@ -34,7 +34,7 @@ for /d %%i in (
   pak99_textures
 ) do (
   pushd %%i
-  %pak% * -g quake2 -o ..\..\%%i.pak
+  %arc% a -tzip ..\..\%%i.pkz *
   popd
 )
 
