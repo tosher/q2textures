@@ -7,6 +7,8 @@
 Based on collection of paks with various high quality 32bit textures paks from various authors and me too.
 
 ### Textures v2
+Pak file: `pak99_textures.pak`
+
 * [Screenshots](https://github.com/tosher/q2textures/tree/master/screens)
 
 Pack includes all needed textures for maps:
@@ -14,11 +16,15 @@ q2dm1, q2dm2, q2dm3, q2dm4, q2dm5, q2dm6, q2dm7, q2dm8, match1, ztn2dm1, ztn2dm2
 
 > Many textures were updated/fixed/added (22.09.2020).
 
-### Icons
-<img src="screens/pics-01.png"></p>
+### MD3 models
+Pak file: `pak97_models.pak`
 
-### Font
-<img src="screens/prochars-01.png"></p>
+### Icons, font & console/ui background image
+Pak file: `pak98_pics.pak`
+
+<p><img src="screens/pics-01.png"></p>
+
+<p><img src="screens/prochars-01.png"></p>
 
 ```
 set con_font "prochars"
@@ -26,11 +32,11 @@ set scr_font "prochars"
 ```
 
 ### Skies
-* [var 1](https://github.com/tosher/q2textures/tree/master/screens/env-01.png)
-* [var 2](https://github.com/tosher/q2textures/tree/master/screens/env-02.png)
-* [q2rdm11](https://github.com/tosher/q2textures/tree/master/screens/env-q2rdm11-03.png)
+Pak file: `pak96_env.pak`
 
-Quake2 is great!
+* [Blue](https://github.com/tosher/q2textures/tree/master/screens/env-01.png)
+* [Red](https://github.com/tosher/q2textures/tree/master/screens/env-02.png)
+* [Night (q2rdm11)](https://github.com/tosher/q2textures/tree/master/screens/env-q2rdm11-03.png)
 
 ## Qpakman
 [Qpakman](https://github.com/bunder/qpakman) - is a command-line tool for managing PAK and WAD files from QuakeI/II & Hexen II.
@@ -45,7 +51,8 @@ Quake2 is great!
 
 > You can just extract two files from archive: `make_paks.bat`, `pakman-062b.zip` and run `make_paks.bat`.
 
-
 ### With git
 * Clone repo into some folder
 * Run `make_paks.bat`
+
+**Quake2** is great!
