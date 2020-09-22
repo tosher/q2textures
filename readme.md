@@ -15,10 +15,10 @@ q2dm1, q2dm2, q2dm3, q2dm4, q2dm5, q2dm6, q2dm7, q2dm8, match1, ztn2dm1, ztn2dm2
 > Many textures were updated/fixed/added (22.09.2020).
 
 ### Icons
-![pics](https://github.com/tosher/q2textures/tree/master/screens/pics-01.png)
+<img src="screens/pics-01.png"></p>
 
 ### Font
-![prochars](https://github.com/tosher/q2textures/tree/master/screens/prochars-01.png)
+<img src="screens/prochars-01.png"></p>
 
 ```
 set con_font "prochars"
