@@ -27,22 +27,35 @@ if exist %arc_name%.zip (
   pushd %arc_name%
 )
 
-for /d %%i in (
-  pak96_env
-  pak97_models
-  pak98_pics
-  pak99_textures
-) do (
+set paks=pak96_env pak97_models pak98_pics pak99_textures
+
+for /d %%i in (%paks%) do (
   pushd %%i
   %pak% * -g quake2 -o ..\..\%%i.pak
   popd
 )
-
 popd
 
-rd /s /q %arc_name%
+echo ------------
+echo Result paks:
+
+for /d %%i in (%paks%) do (
+  call :show_normalized %~dp0..\%%i.pak
+)
+
+echo All paks were builded successfully
+
+if exist %arc_name% (
+  rd /s /q %arc_name%
+)
 del /q qpakman.exe
 del /q qpakman.txt
 del /q qpakman-linux
 del /q source-qpakman-062.zip
 pause
+EXIT /B 0
+
+:show_normalized
+  FOR %%d IN (%1) do set res=%%~fd
+  echo %res%
+  EXIT /B

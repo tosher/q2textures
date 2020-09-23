@@ -22,21 +22,36 @@ Pak file: `pak97_models.pak`
 ### Icons, font & console/ui background image
 Pak file: `pak98_pics.pak`
 
-<p><img src="screens/pics-01.png"></p>
+![](screens/pics-01.png?raw=true)
 
-<p><img src="screens/prochars-01.png"></p>
+![](screens/prochars-01.png?raw=true)
 
 ```
 set con_font "prochars"
 set scr_font "prochars"
 ```
 
+Optional settings:
+
+```
+set scr_scale "2"
+set con_scale "2"
+set gl_fontshadow "0"
+set gl_bilerp_chars "1"
+set gl_bilerp_pics "1"
+```
+
 ### Skies
 Pak file: `pak96_env.pak`
 
-* [Blue](https://github.com/tosher/q2textures/tree/master/screens/env-01.png)
-* [Red](https://github.com/tosher/q2textures/tree/master/screens/env-02.png)
-* [Night (q2rdm11)](https://github.com/tosher/q2textures/tree/master/screens/env-q2rdm11-03.png)
+![Blue](screens/env-01.png?raw=true)
+*Blue skies*
+
+![Red](screens/env-02.png?raw=true)
+*Red skies*
+
+![Night (q2rdm11)](screens/env-q2rdm11-03.png?raw=true)
+*Night (q2rdm11)*
 
 ## Qpakman
 [Qpakman](https://github.com/bunder/qpakman) - is a command-line tool for managing PAK and WAD files from QuakeI/II & Hexen II.
