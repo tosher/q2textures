@@ -3,9 +3,9 @@ set arc_name=q2textures-master
 set pakmanzip=qpakman-062b.zip
 set pak="%~dp0qpakman.exe"
 
-for /f "tokens=1-2*" %%A in ('reg query HKEY_CURRENT_USER\Software\7-Zip /v path ^| find "REG_SZ"') do set arc=%%C7z.exe
+for /f "tokens=1-2*" %%A in ('reg query HKEY_CURRENT_USER\Software\7-Zip /v path ^| find "REG_SZ"') do set arc="%%C7z.exe"
 
-if defined arc goto unzip
+if exist %arc% goto unzip
 
 for %%i in (
   "%ProgramFiles(x86)%\WinRAR\WinRAR.exe"
