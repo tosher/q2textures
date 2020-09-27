@@ -4,12 +4,12 @@
 * Hi-res icons & font (optional)
 * Skies (optional)
 
-Based on collection of paks with various high quality 32bit textures paks from various authors and me too.
+Based on collection of various high quality textures/models/icons paks from various authors and me too.
 
 ### Textures v2
 Pak file: `pak99_textures.pak`
 
-* [Screenshots](https://github.com/tosher/q2textures/tree/master/screens)
+* [Screenshots](https://github.com/tosher/q2textures/tree/master/screenshots)
 
 Pack includes all needed textures for maps:
 q2dm1, q2dm2, q2dm3, q2dm4, q2dm5, q2dm6, q2dm7, q2dm8, match1, ztn2dm1, ztn2dm2, ztn2dm3, ztn2dm4, ztn2dm5, fury, ptrip, q2next1, q2duel1, q2duel5, q2rdm2, q2rdm7, q2rdm11
@@ -22,9 +22,9 @@ Pak file: `pak97_models.pak`
 ### Icons, font & console/ui background image
 Pak file: `pak98_pics.pak`
 
-![](screens/pics-01.png?raw=true)
+![](screenshots/pics-01.png?raw=true)
 
-![](screens/prochars-01.png?raw=true)
+![](screenshots/prochars-01.png?raw=true)
 
 ```
 set con_font "prochars"
@@ -44,13 +44,13 @@ set gl_bilerp_pics "1"
 ### Skies
 Pak file: `pak96_env.pak`
 
-![Blue](screens/env-01.png?raw=true)
+![Blue](screenshots/env-01.png?raw=true)
 *Blue skies*
 
-![Red](screens/env-02.png?raw=true)
+![Red](screenshots/env-02.png?raw=true)
 *Red skies*
 
-![Night (q2rdm11)](screens/env-q2rdm11-03.png?raw=true)
+![Night (q2rdm11)](screenshots/env-q2rdm11-03.png?raw=true)
 *Night (q2rdm11)*
 
 ## Qpakman
