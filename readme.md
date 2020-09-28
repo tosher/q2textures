@@ -41,6 +41,16 @@ set gl_bilerp_chars "1"
 set gl_bilerp_pics "1"
 ```
 
+Console background:
+```
+set con_background "conback_1920x1080.png"
+```
+
+Menu background (file `q2pro.menu`)
+```
+background menuback_1920x1080.png
+```
+
 ### Skies
 Pak file: `pak96_env.pak`
 
