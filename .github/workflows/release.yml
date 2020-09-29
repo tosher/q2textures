@@ -1,0 +1,93 @@
+name: Create release with uploading multi assets (trigger -> push tag matching "v*" like "v1.0.0")
+
+on:
+  push:
+    tags:
+      - "v*" # Push events to matching v*, i.e. v1.0, v20.15.10
+
+jobs:
+  build:
+    name: Create release with uploading assets
+    runs-on: ubuntu-18.04 # https://github.com/actions/virtual-environments/blob/ubuntu18/20200920.1/images/linux/Ubuntu1804-README.md
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2 # https://github.com/actions/checkout # Only a single commit is fetched by default, for the ref/SHA that triggered the workflow
+      - name: Clone 'qpakman' repo
+        run: git clone https://github.com/bunder/qpakman.git qpakmandir # need to use dir 'qpakmandir', because if use default dir 'qpakman' - later CMake could not build binary with same name 'qpakman'
+      - name: Just for checking purpose - ENV show
+        run: env
+      - name: Just for checking purpose - PWD command
+        run: pwd # it would show same absolute path as in $GITHUB_WORKSPACE , BUT home directory is $HOME=/home/runner
+      - name: Just for checking purpose - LS command
+        run: ls -al
+      - name: Cmake prepare for building 'qpakman'
+        run: cmake ./qpakmandir # /home/runner/work/q2textures/q2textures/qpakmandir
+      - name: Cmake build 'qpakman'
+        run: cmake --build . # /home/runner/work/q2textures/q2textures/qpakman
+
+      # Run script for building PAK-files (at root directory)
+      - name: Making script executable
+        run: chmod +x ./linux_paks_builder.bash
+      - name: Running script for building PAK-files
+        run: ./linux_paks_builder.bash
+      - name: Just for checking purpose - LS command
+        run: ls -al
+      # Create release
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1 # https://github.com/actions/create-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }} # there would be tag name like 'v6.6.6' (this tag triggered action)
+          release_name: Release ${{ github.ref }}
+          body: "Another cool release is here! :)" # TODO: could be autocreated with commits history
+          draft: false
+          prerelease: false
+      # Upload Release Asset
+      - name: Upload Release Asset#1
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pak96_env.pak
+          asset_name: pak96_env.pak
+          asset_content_type: application/zip # mandatory!
+      - name: Upload Release Asset#2
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./pak97_models.pak
+          asset_name: pak97_models.pak
+          asset_content_type: application/zip
+      - name: Upload Release Asset#3
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./pak98_pics.pak
+          asset_name: pak98_pics.pak
+          asset_content_type: application/zip
+      - name: Upload Release Asset#4
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./pak99_textures.pak
+          asset_name: pak99_textures.pak
+          asset_content_type: application/zip
+      - name: Upload Release Asset#5
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./qpakman.log
+          asset_name: qpakman.log
+          asset_content_type: text/plain
