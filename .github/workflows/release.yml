@@ -34,6 +34,8 @@ jobs:
       - name: Just for checking purpose - LS command
         run: ls -al
       # Create release
+      # TODO: Update release support
+      # https://developer.github.com/v3/repos/releases/#update-a-release
       - name: Create release
         id: create_release
         uses: actions/create-release@v1 # https://github.com/actions/create-release

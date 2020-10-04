@@ -27,7 +27,7 @@ if exist %arc_name%.zip (
   pushd %arc_name%
 )
 
-set paks=pak96_env pak97_models pak98_pics pak99_textures
+set paks=pak96_env pak97_models pak98_pics pak99_textures pak95_models_bright
 
 for /d %%i in (%paks%) do (
   pushd %%i
