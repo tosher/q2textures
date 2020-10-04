@@ -90,6 +90,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./pak97_models_bright.pak
+          asset_name: pak97_models_bright.pak
+          asset_content_type: application/zip
+      - name: Upload Release Asset#6
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./qpakman.log
           asset_name: qpakman.log
           asset_content_type: text/plain
