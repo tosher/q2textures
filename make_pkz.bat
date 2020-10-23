@@ -18,9 +18,6 @@ if not defined arc (cls & color c & echo 7zip or WinRar not found... & pause > n
 
 :unzip
 
-echo "Unpacking pakman in %~dp0..."
-%arc% x -y %pakmanzip%
-
 if exist %arc_name%.zip (
   echo "Unpacking textures in %~dp0..."
   %arc% x -y %arc_name%.zip
@@ -48,10 +45,6 @@ echo All paks were builded successfully
 if exist %arc_name% (
   rd /s /q %arc_name%
 )
-del /q qpakman.exe
-del /q qpakman.txt
-del /q qpakman-linux
-del /q source-qpakman-062.zip
 pause
 EXIT /B 0
 
