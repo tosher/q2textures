@@ -158,3 +158,19 @@ for /d %%i in (%dirs%) do (
   copy /Y %textures_dir%\%src_texture_path% %textures_dir%\%%i\%texture%
 )
 
+
+set texture=flat1_1.png
+set src_texture_path=e1u1\%texture%
+set dirs=e1u3 e3u3
+for /d %%i in (%dirs%) do (
+  copy /Y %textures_dir%\%src_texture_path% %textures_dir%\%%i\%texture%
+)
+
+
+set texture=flat1_2.png
+set src_texture_path=e1u1\%texture%
+set dirs=e1u3 e3u3
+for /d %%i in (%dirs%) do (
+  copy /Y %textures_dir%\%src_texture_path% %textures_dir%\%%i\%texture%
+)
+
