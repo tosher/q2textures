@@ -201,3 +201,31 @@ set dirs=e3u2
 for /d %%i in (%dirs%) do (
   copy /Y %textures_dir%\%src_texture_path% %textures_dir%\%%i\%texture%
 )
+
+set texture=crate1_1.png
+set src_texture_path=e1u1\%texture%
+set dirs=e1u2
+for /d %%i in (%dirs%) do (
+  copy /Y %textures_dir%\%src_texture_path% %textures_dir%\%%i\%texture%
+)
+
+set texture=crate1_3.png
+set src_texture_path=e1u1\%texture%
+set dirs=e1u2
+for /d %%i in (%dirs%) do (
+  copy /Y %textures_dir%\%src_texture_path% %textures_dir%\%%i\%texture%
+)
+
+set texture=crate1_4.png
+set src_texture_path=e1u1\%texture%
+set dirs=e1u2
+for /d %%i in (%dirs%) do (
+  copy /Y %textures_dir%\%src_texture_path% %textures_dir%\%%i\%texture%
+)
+
+set texture=crate1_6.png
+set src_texture_path=e1u1\%texture%
+set dirs=e1u2
+for /d %%i in (%dirs%) do (
+  copy /Y %textures_dir%\%src_texture_path% %textures_dir%\%%i\%texture%
+)
