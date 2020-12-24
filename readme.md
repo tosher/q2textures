@@ -6,10 +6,11 @@
 
 Based on collection of various high quality textures/models/icons paks from various authors and me too.
 
-## Install
+## Install ([q2pro](https://github.com/skullernet/q2pro))
+
 Just download all paks from [latest release](https://github.com/tosher/q2textures/releases/latest) and copy them into baseq2 folder.
 
-> r1q2 client require to rename the paks into pakNN.pak scheme.
+> r1q2 client unsupported from v2.4.1 due to image size restrictions.
 
 ## Build paks
 
