@@ -121,6 +121,11 @@
 ![](screenshots/q2rdm2-03.png?raw=true)
 ![](screenshots/q2rdm2-04.png?raw=true)
 
+### q2rdm3
+![](screenshots/q2rdm3-01.png?raw=true)
+![](screenshots/q2rdm3-02.png?raw=true)
+![](screenshots/q2rdm3-03.png?raw=true)
+
 ### q2rdm6
 ![](screenshots/q2rdm6-01.png?raw=true)
 ![](screenshots/q2rdm6-02.png?raw=true)
@@ -131,6 +136,10 @@
 ![](screenshots/q2rdm7-03.png?raw=true)
 ![](screenshots/q2rdm7-04.png?raw=true)
 
+### q2rdm8
+![](screenshots/q2rdm8-01.png?raw=true)
+![](screenshots/q2rdm8-02.png?raw=true)
+
 ### q2rdm9
 ![](screenshots/q2rdm9-01.png?raw=true)
 ![](screenshots/q2rdm9-02.png?raw=true)
@@ -140,3 +149,7 @@
 ### q2rdm11
 ![](screenshots/q2rdm11-01.png?raw=true)
 ![](screenshots/q2rdm11-02.png?raw=true)
+
+### koldduel1
+![](screenshots/koldduel1-01.png?raw=true)
+![](screenshots/koldduel1-02.png?raw=true)
