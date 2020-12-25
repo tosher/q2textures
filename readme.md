@@ -34,15 +34,16 @@ Pak file: `pak99_textures.pak`
 * [Screenshots](https://github.com/tosher/q2textures/tree/master/screenshots)
 
 Pack includes all needed textures for maps:
-q2dm1, q2dm2, q2dm3, q2dm4, q2dm5, q2dm6, q2dm7, q2dm8, match1, ztn2dm1, ztn2dm2, ztn2dm3, ztn2dm4, ztn2dm5, fury, ptrip, q2next1, q2duel1, q2duel5, q2rdm1, q2rdm2, q2rdm7, q2rdm11
+q2dm1-8, match1, ztn2dm1-5, q2duel1-6, q2rdm1-11, q2rdm14, q2rdm15, fury, ptrip, q2next1, koldduel1
 
 > Many textures were updated/fixed/added (22.09.2020).
 
 > [Screenshots settings](https://github.com/tosher/q2textures/tree/master/screenshots.cfg)
 
 ### MD3 models
-* Pak file: `pak97_models.pak`
-* Pak file: `pak97_models_bright.pak` (bright skins version)
+* Pak file: `pak97_models.pak` - original md3 models
+* Pak file: `pak97_models_bright.pak` - bright skins version
+* Pak file: `pak95_v_models.pak` - in hand weapons (based on excellent [Quake XP](https://www.moddb.com/mods/quake-2-xp) models)
 
 ![](screenshots/models_bright.png?raw=true)
 

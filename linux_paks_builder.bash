@@ -14,7 +14,7 @@ PAK_CREATION_TOOL_PATH="qpakman"
 
 # Each dir here would become PAK-file
 # HARDCODE! If change this list - change also GitHub Actions workflow!
-LIST_SOURCE_DIRS_NAMES="pak96_env pak97_models pak98_pics pak99_textures pak97_models_bright"
+LIST_SOURCE_DIRS_NAMES="pak96_env pak97_models pak98_pics pak99_textures pak97_models_bright pak95_v_models"
 
 # Here would be all created PAK-files
 OUTPUT_DIR_NAME="."
