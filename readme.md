@@ -45,14 +45,14 @@ q2dm1-8, match1, ztn2dm1-5, q2duel1-6, q2rdm1-11, q2rdm14, q2rdm15, fury, ptrip,
 * Pak file: `pak97_models_bright.pak` - bright skins version
 * Pak file: `pak95_v_models.pak` - in hand weapons (based on excellent [Quake XP](https://www.moddb.com/mods/quake-2-xp) models)
 
-![](screenshots/models_bright.png?raw=true)
+![](screenshots/models_bright.jpg?raw=true)
 
 ### Icons, font & console/ui background image
 Pak file: `pak98_pics.pak`
 
-![](screenshots/pics-01.png?raw=true)
+![](screenshots/pics-01.jpg?raw=true)
 
-![](screenshots/prochars-01.png?raw=true)
+![](screenshots/prochars-01.jpg?raw=true)
 
 ```
 set con_font "prochars"
@@ -71,24 +71,24 @@ set gl_bilerp_pics "1"
 
 Console background:
 ```
-set con_background "conback_1920x1080.png"
+set con_background "conback_1920x1080.jpg"
 ```
 
 Menu background (file `q2pro.menu`)
 ```
-background menuback_1920x1080.png
+background menuback_1920x1080.jpg
 ```
 
 ### Skies
 Pak file: `pak96_env.pak`
 
-![Blue](screenshots/env-01.png?raw=true)
+![Blue](screenshots/env-01.jpg?raw=true)
 *Blue skies*
 
-![Red](screenshots/env-02.png?raw=true)
+![Red](screenshots/env-02.jpg?raw=true)
 *Red skies*
 
-![Night (q2rdm11)](screenshots/env-q2rdm11-03.png?raw=true)
+![Night (q2rdm11)](screenshots/env-q2rdm11-03.jpg?raw=true)
 *Night (q2rdm11)*
 
 **Quake2** is great!
